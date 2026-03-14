@@ -89,7 +89,7 @@ def generate_document(api_key: str, user_request: str) -> str:
     system_prompt = build_system_prompt(st.session_state.documents)
 
     model = genai.GenerativeModel(
-        model_name="gemini-1.5-flash",
+        model_name="gemini-2.0-flash-lite",
         system_instruction=system_prompt,
     )
 
